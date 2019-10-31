@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 pt-3 text-align-center">
+      <h2>{{ label }}</h2>
+      {#<small class="text-muted">{{ date }}</small>#}
+      <small class="text-muted">
+        {{ node.fields.created.value|date('U')|format_date('short') }}
+      </small>
+      <p class="card-text">{{ content.field_description.0 }}</p>
+      <img src="{{ content.field_image.0 }}" class="rounded mx-auto d-block" style="height: 225px; width: 348px; display: block;" alt="">
+    </div>
+  </div>
+</div>

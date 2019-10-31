@@ -1,0 +1,15 @@
+<div class="col-md-4">
+  <div class="card mb-4 box-shadow">
+    <img src="{{ content.field_image.0 }}" class="card-img-top" style="height: 225px; width: 100%; display: block;" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ label }}</h5>
+      <p class="card-text">{{ content.field_description.0 }}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <a href="{{ url }}" class="btn btn-sm btn-outline-secondary">View</a>
+        </div>
+        <small class="text-muted">{{ date }}</small>
+      </div>
+    </div>
+  </div>
+</div>
